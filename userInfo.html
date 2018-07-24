@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>UserInfo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+
+    
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top-container bg-dark">
+            <div class="container top-contents">
+                <div class="top-nav">
+                    <div class="left-side">
+                        <ul class="navbar-nav navbar-expand">
+                            <li class="nav-item"><a href="#" class="nav-link">amaderSheba@gmail.com</a></li>
+                            <li><a href="#" class="addPost nav-link" data-toggle="modal" data-target="#postAdd">Post Your Ads</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="right-side">
+                        <ul class="navbar-nav navbar-expand">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#signInModal">MY ACCOUNT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#registrtionModal">LOGOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://facebook.com" target="_blank" class="nav-link">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://twitter.com/" target="_blank" class="nav-link">
+                                        <i class="fa fa-twitter-square"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.instagram.com/" target="_blank" class="nav-link">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://bd.linkedin.com/" target="_blank" class="nav-link">
+                                        <i class="fa fa-linkedin-square"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <div class="top-container-fluid">
+            <div class="container top-content">
+                <div class="brand">
+                    <a href="index.html" class="nav-link">AMADER<span class="text-danger">SHEBA</span></a>
+                </div>
+
+                <div class="searchItem input-group">
+                    <input type="search" class="form-control" placeholder="Search...">
+                    <button class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content mt-4 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col left-navbar" style="height: 80vh;">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="form" data-target="#form">Profile</a>
+                            </li>
+
+                            <!-- dropdown-menu -->                            
+                            <li class="nav-item panel panel-defautl" id="dropdown">
+                                <a href="#dropdown-menu1" class="nav-link" data-toggle="collapse">Services <span class="arrow"><i class="fa fa-angle-down"></i></span></a>
+
+                                <div class="panel-collapse collapse" id="dropdown-menu1">
+                                    <div class="panel-body pl-4">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#" class="nav-link">- Services 1</a></li>
+                                            <li><a href="#" class="nav-link">- Services 2</a></li>
+                                            <li><a href="#" class="nav-link">- Services 3</a></li>
+                                            <li><a href="#" class="nav-link">- Services 4</a></li>
+                                            <li><a href="#" class="nav-link">- Services 5</a></li>
+                                            <li><a href="#" class="nav-link">- Services 6</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Reviews</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="user-main-body pl-2">
+                        <div class="showcase">
+                            <div class="user-top-content">
+                                    <div class="editCoverPhoto p-2 left">
+                                        <button class="btn btn-outline-light btn-sm">Edit Cover Photo</button>
+                                    </div>
+        
+                                    <div class="socialLink right pt-2">
+                                        <ul class="navbar-nav navbar-expand">
+                                            <li class="nav-item">
+                                                <a href="http://facebook.com" target="_blank" class="bg-primary">
+                                                    <i class="fa fa-facebook-square"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="https://twitter.com/" target="_blank" class="bg-info">
+                                                    <i class="fa fa-twitter-square"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="https://www.instagram.com/" target="_blank" class="bg-danger">
+                                                    <i class="fa fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="https://bd.linkedin.com/" target="_blank" class="bg-info">
+                                                    <i class="fa fa-linkedin-square"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </div>
+
+                            <div class="userProfile text-center">
+                                <div class="avator pt-5">
+                                    <img src="http://stas-melnikov.ru/cliparts/stas.jpg" alt="">
+                                    
+                                    <h3 class="profile__name">Stas Melnikov</h3>
+                                    <span class="profile__post text-white">Member</span>
+                                </div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+
+                        <nav class="lightGreen">
+                            <div class="container p-4">
+                            <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#userInfo">UserInfo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#changePass">Change Password</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#services">Services</a>
+                                    </li>
+                                </ul>
+                                
+                                <!-- Tab panes -->
+                                <div class="tab-content bg-white p-3">
+                                    <div id="userInfo" class="container tab-pane active"><br>
+                                        <h3 class="text-center">UserInfo <hr></h3>  <br>
+                                        
+                                        <form>
+                                            <table>
+                                                <tr>
+                                                    <th>Name:</th>
+                                                    <td><input type="text" class="form-control" value="Stas Melnikov"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>UserName:</th>
+                                                    <td><input type="text" class="form-control" value="stas_210"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Email:</th>
+                                                    <td><input type="email" class="form-control" value="stasMelnikov@gmail.com"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Phone Number:</th>
+                                                    <td><input type="tel" class="form-control" value="00 123 456 789"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Gender:</th>
+                                                    <td>
+                                                        <select class="form-control" name="Gender" id="">
+                                                            <option value="notSpecified"></option>
+                                                            <option value="male">Male</option>
+                                                            <option value="female">Female</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <div class="saveBtn text-center mt-4 mb-3">
+                                                <button class="btn btn-primary">Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div id="changePass" class="container tab-pane fade"><br>
+                                        <h3 class="text-center">Change Password <hr></h3>  <br>
+                                        
+                                        <form>
+                                            <table>
+                                                <!-- <tr>
+                                                    <th><h5 class="mt-4">Edit Password:</h5><hr></th>
+                                                </tr>  -->
+                                                <tr>
+                                                    <th><label>Old Password:</label></th>
+                                                    <td><input type="password" class="form-control"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>New Password:</label></th>
+                                                    <td><input type="password" class="form-control"></td>
+                                                </tr>
+                                            </table>
+
+                                            <div class="saveBtn text-center mt-3 mb-3">
+                                                <button class="btn btn-primary">Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div id="services" class="service_list container tab-pane fade"><br>
+                                        <div class="service-panel">
+                                            <div class="service-header">
+                                                <h6>Services</h6>
+                                                <hr>
+                                            </div>
+                                            <div class="row mb-5">
+                                                <div class="col">
+                                                    <a href="">
+                                                        <div class="addServices lightGrey">
+                                                            <span><i class="fa fa-plus-square"></i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col shadow">
+                                                    <a href="img/img1.jpg">
+                                                        <div class="images">
+                                                            <img src="img/img1.jpg" alt="">
+                                                        </div>
+                                                        <div class="product_Tilte lightGrey p-1 text-center">
+                                                            <h6>Service 1</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col shadow">
+                                                    <a href="img/img2.jpg">
+                                                        <div class="images">
+                                                            <img src="img/img2.jpg" alt="">
+                                                        </div>
+                                                        <div class="product_Tilte lightGrey p-1 text-center">
+                                                            <h6>Service 2</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col shadow">
+                                                    <a href="img/img3.jpg">
+                                                        <div class="images">
+                                                            <img src="img/img3.jpg" alt="">
+                                                        </div>
+                                                        <div class="product_Tilte lightGrey p-1 text-center">
+                                                            <h6>Service 3</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col shadow">
+                                                    <a href="img/img4.jpg">
+                                                        <div class="images">
+                                                            <img src="img/img4.jpg" alt="">
+                                                        </div>
+                                                        <div class="product_Tilte lightGrey p-1 text-center">
+                                                            <h6>Service 4</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col shadow">
+                                                    <a href="img/img5.jpg">
+                                                        <div class="images">
+                                                            <img src="img/img5.jpg" alt="">
+                                                        </div>
+                                                        <div class="product_Tilte lightGrey p-1 text-center">
+                                                            <h6>Service 5</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col shadow">
+                                                    <a href="img/img6.jpg">
+                                                        <div class="images">
+                                                            <img src="img/img6.jpg" alt="">
+                                                        </div>
+                                                        <div class="product_Tilte lightGrey p-1 text-center">
+                                                            <h6>Service 6</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col shadow">
+                                                    <a href="img/img7.jpg">
+                                                        <div class="images">
+                                                            <img src="img/img7.jpg" alt="">
+                                                        </div>
+                                                        <div class="product_Tilte lightGrey p-1 text-center">
+                                                            <h6>Service 7</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                                
+                                            <!-- <button class="btn btn-outline-dark btn-sm">Show All</button> -->
+                                        </div>
+
+                                        <div class="reviewsRating mb-5">
+                                            <div class="review-content">
+                                                <h6 class="">Reviews</h6> <hr>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="userAvatar">
+                                                        <h5><span><i class="fa fa-users"></i></span> S. Rahman</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <div class="comment">
+                                                        <p>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="userAvatar">
+                                                        <h5><span><i class="fa fa-users"></i></span> S. Rahman</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <div class="comment">
+                                                        <p>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="userAvatar">
+                                                        <h5><span><i class="fa fa-users"></i></span> S. Rahman</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <div class="comment">
+                                                        <p>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="userAvatar">
+                                                        <h5><span><i class="fa fa-users"></i></span> S. Rahman</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <div class="comment">
+                                                        <p>Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                    <span><i class="fa fa-star text-warning"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign In, Registration -->
+    <div class="signInOrSignUp">
+        <div class="modal fade" id="postAdd">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <form class="form">
+                            <button class="btn btn-primary mt-4 mb-2">Continue with facebook</button> <br>
+                            <label> or </label> <br>
+                            <button class="btn btn-warning mt-2 mb-4">Sign up using e-mail</button> <br>
+                            
+                            <label class="mb-3">By signing up for an account you agree to <br>
+                            our <a href="#">Terms and Conditions</a></label>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    
+    <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.table { display: table; }
+.ls_None { list-style: none; }
+.lightGreen { background-color: #2ecc71; }
+.lightGrey { background-color: #eeeeee; }
+.shadow { box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px; }
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(247, 247, 247);
+}
+
+.wrapper .top-container {
+    width: 100%;
+    height: 2.4rem;
+    margin: auto;
+}
+
+.top-container .top-contents, .top-container-fluid .top-content {
+    width: 980px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.top-container .left-side {
+    float: left;
+    padding-left: 0;
+    font-size: 0.9rem;
+}
+
+.top-container .right-side {
+    float: right;
+}
+
+.top-container .right-side ul li,  .left-side ul li {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.9rem;
+}
+
+.top-container .right-side a,  .left-side a {
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.arrow {
+    float: right;
+}
+
+.top-container .right-side .fa {
+    font-size: 1rem;
+}
+
+.top-container-fluid {
+    width: 100%;
+    background-color: #dddddd;
+    height: 5rem;
+    border-bottom: 5px solid #DC3545;
+}
+
+.top-container-fluid .top-content {
+    padding: 0;
+}
+
+.top-container-fluid .brand {
+    float: left;
+    width: 50%;
+}
+
+.top-container-fluid a {
+    font-size: 2.4rem;
+    padding-left: 0; 
+    font-weight: bold;
+    color: #333333;
+}
+
+.top-container-fluid .input-group {
+    float: right;
+    width: 40%;
+    padding: 1.2rem 0.1rem;
+}
+
+.top-container-fluid input {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid #DC3545;
+}
+
+.top-container-fluid .btn {
+    padding: 0.4rem 1.3rem;
+    border-radius: 0  5px 5px 0;
+}
+
+
+/* Sign In && Sing Up */
+
+
+.signInProcess .modal {
+    margin-top: 7%;
+}
+
+.signInProcess form {
+    width: 70%;
+    margin: auto;
+}
+
+.signInProcess .input-group {
+    padding: 0.5rem 0;
+}
+
+.signInProcess span {
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.signInProcess .input-group .fa {
+    columns: #ffffff;
+}
+
+.signInProcess .splitBox {
+    width: 100%;
+}
+
+.signInProcess .remember {
+    float: left;
+}
+
+.signInProcess .lostPassword {
+    float: right;
+}
+
+.signInProcess .lostPassword a {
+    padding: 0;
+
+}
+
+.registrationProcess .modal-headers h2, .signInProcess .modal-headers h2 {
+    padding: 1rem;
+    font-weight: bold;
+    color: #333333;
+    font-family: cursive;
+}
+
+.registrationProcess .modal-body, .signInProcess .modal-body {
+     background-color: rgb(247, 247, 247);
+}
+
+.registrationProcess .btn, .signInProcess .btn {
+    width: 100%;
+}
+
+.registrationProcess form {
+    width: 90%;
+    margin: auto;
+}
+
+.registrationProcess .splitBox {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.registrationProcess label, .signInProcess label {
+    font-size: 0.9rem;
+}
+
+.registrationProcess input {
+    font-size: 0.9rem;
+}
+
+.registrationProcess .remember {
+    text-align: center;
+}
+
+/* main-content */
+.main-content {
+    width: 980px;
+    height: 100%;
+    margin: auto;
+}
+
+.main-content .avator img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #dddddd;
+    margin-top: 1rem;
+    margin-bottom: rem;
+}
+
+.profile__name {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.main-content .left-navbar {
+    background: #3E4858;
+    padding: 1 rem;
+    height: 100%;
+}
+
+.nav-link:hover {
+    color: coral;
+}
+
+.main-content .main-body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 1rem;
+
+}
+
+.main-content .row {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.main-content .navbar {
+    height: 100%;
+}
+
+.main-content .nav {
+    top: 0;
+}
+
+.main-content .main-body .row {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.user-main-body .showcase {
+    background: url('img/header-bg.jpg');
+    width: 100%;
+    height: 280px;
+}
+
+.user-main-body ul li a {
+    color: #fff;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    display: block;
+    margin-top: px;
+}
+
+.main-body .panel {
+    padding: 0 2rem;
+}
+
+.main-body .panel a {
+    color: #3E4858;
+    text-decoration: none;
+}
+
+.main-body .panel:hover, .main-body .panel a:hover {
+    color: rgb(70, 110, 170);/* 
+    transition: .15s all ease-in-out;
+    transform: scale(1.1);
+    margin-left: 1rem;
+    background-color: rgb(66, 151, 147); */
+}
+
+.main-body .panel img:hover {
+    opacity: 0.7;
+}
+
+.main-body .row {
+    padding: 1rem 0; 
+    border-bottom: 1.5px solid rgb(235, 237, 240);
+}
+
+.main-body .productsInfo a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.main-body .productsInfo a:hover {
+    text-decoration: none;
+    color: rgb(4, 117, 182);
+}
+
+.main-body .productsInfo h5 {
+    font-weight: bold;
+}
+
+.main-body img {
+    width: 200px;
+    height: 120px;
+}
+
+.amount {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    font-weight: bold;
+}
+
+.productLocation {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.main-body .productsInfo .userInfo {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.userInfo .fa {
+    font-size: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.user-main-body .avator img:hover{
+    cursor: pointer;
+    background-color: #515e72;
+}
+
+
+
+/* left-navbar */
+
+.left-navbar {
+    padding: 1rem 2rem;
+    height: 100%;
+
+}
+
+.left-navbar .input-group input {
+    color: coral;
+    background: #3E4858;
+    border: none;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.2rem;
+    float: left;
+}
+
+.left-navbar .nav-item { /* 323846 515e72 */
+    border-bottom: 1px solid #515e72;
+}
+
+.left-navbar ul li a {
+    color: #ffffff;
+}
+/*  */
+.signInOrSignUp .modal {
+    margin-top: 10%;
+}
+
+.signInOrSignUp .modal-dialog {
+    width: 30%;
+    margin: auto;
+}
+
+
+.signInOrSignUp .form {
+    width: 80%;
+    margin: auto;
+}
+
+.signInOrSignUp .modal-body .btn {
+    width: 100%;
+}
+
+.signInOrSignUp label {
+    font-size: 0.9rem;
+    color: #39414b;
+}
+
+.signInOrSignUp  .modal .modal-footer .btn {
+    width: 25%;
+    margin: auto;
+}
+
+/* footer */
+
+.footer{
+	padding: 2rem 0;;
+	color: #fff;
+}
+.footer .containers {
+    width: 980px;
+    margin: auto;
+}
+.footer .row{
+	display: grid;
+	grid-template-columns: 3fr 6fr 3fr;
+}
+.footer h5{
+	font-weight: bold;
+}
+.footer ul{
+	list-style: none;
+}
+.footer li{
+	line-height: 2rem;
+}
+.footer ul li a{
+	text-decoration: none;
+	color: lightslategray;
+	font-size: 0.9rem;
+}
+.footer ul li a:hover{
+	color: #FFC107;
+}
+.footer .input-group{
+	width: 400px;
+}
+.footer .subscribeBtn{
+	border: none;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	border-radius: 0 0.3rem 0.3rem 0;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+.footer .instaImg img{
+    padding-bottom: 0.3rem;
+    width: 50px;
+}
+.footer .fa, .footer span{
+	color: #FFC107;
+}
+.footer p {
+    font-size: 0.9rem;
+}
+
+/* Navbar Tabs */
+
+.profile__name {
+    font-weight: bold;
+}
+
+.user-main-body .nav-tabs a {
+    font-size: 1.1rem;
+    color: #333333;
+    padding: 0.5rem 3rem;
+    border: none;
+}
+
+.tab-content .text-center {
+    width: 80%;
+    margin: auto;
+}
+
+.service_list .row {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.service_list img, .addServices {
+    width: 100%;
+    height: 90px;
+}
+
+.addServices {
+    width: 100%;
+    height: 100%;
+}
+
+.addServices span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 36%;
+}
+
+.addServices span .fa {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.service_list .row .col a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.service_list .row .col a:hover {
+    color: #DC3545;
+}
+
+.tab-content .service_list .row .col {
+    padding: 0;
+    margin: 0;
+}
+.service-header .btn{
+    margin-right: auto;
+}
+.service_list .product_Tilte {
+    width: 100%;
+}
+
+.service_list .product_Tilte h6 {
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+}
+
+/* UserInfo */
+
+.tab-content form table {
+    width: 80%;
+    margin: auto;
+}
+
+.tab-content form table tr td {
+    padding: 0.5rem 0;
+}
+.tab-content form table h5 {
+    font-size: 1rem;
+    color: crimson;
+    font-weight: bold;
+}
+
+.saveBtn .btn{
+    width: 120px;
+}
+
+/* Review */
+.tab-content .service_list .reviewsRating .review-content {
+    padding: 0;
+}
+
+.tab-content .service_list .reviewsRating .row {
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+    border-bottom: 1px solid #cccccc;
+    padding: 1rem;
+    background-color: #eeeeee;
+}
+.service_list .reviewsRating .row .col {
+    padding: 0;
+}
+
+.reviewsRating .row .col p {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: rem 0;
+}
+.reviewsRating .row .col h5 {
+    font-size: 1rem;
+}
+
+.service_list .reviewsRating .row .col .icon .fa {
+    font-size: 1rem;
+    color: #39414b;
+    text-align: center;
+}
